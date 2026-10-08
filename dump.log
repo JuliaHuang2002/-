@@ -1,0 +1,77 @@
+=== bolt-base ali ===
+[model] loading amazon/chronos-bolt-base on cuda
+[data] data/alibaba_10min_test_v2.npy: shape=(1440,), mean=43.22, std=4.68
+[eval] 1009 windows, lookback=288, horizons=[1, 6, 36, 144]
+[eval] 100/1009 (8.41 win/s, ETA 108s)
+[eval] 200/1009 (11.62 win/s, ETA 70s)
+[eval] 300/1009 (13.24 win/s, ETA 54s)
+[eval] 400/1009 (14.30 win/s, ETA 43s)
+[eval] 500/1009 (14.95 win/s, ETA 34s)
+[eval] 600/1009 (15.43 win/s, ETA 27s)
+[eval] 700/1009 (15.79 win/s, ETA 20s)
+[eval] 800/1009 (16.09 win/s, ETA 13s)
+[eval] 900/1009 (16.29 win/s, ETA 7s)
+[eval] 1000/1009 (16.43 win/s, ETA 1s)
+[eval] 1009/1009 (16.44 win/s, ETA 0s)
+[dump] saved preds/bolt-base__ali.npz  preds(1009, 144)  trues(1009, 144)
+[done] bolt-base__ali: h=1=0.8573  h=6=1.4676  h=36=2.7322  h=144=3.8295  runtime=61.4s
+=== bolt-lora ali ===
+[model] loading amazon/chronos-bolt-base on cuda
+[lora] attaching adapter checkpoints/bolt_lora_ali/adapter
+[lora] merged.
+[data] data/alibaba_10min_test_v2.npy: shape=(1440,), mean=43.22, std=4.68
+[eval] 1009 windows, lookback=288, horizons=[1, 6, 36, 144]
+[eval] 100/1009 (11.34 win/s, ETA 80s)
+[eval] 200/1009 (14.04 win/s, ETA 58s)
+[eval] 300/1009 (15.31 win/s, ETA 46s)
+[eval] 400/1009 (16.04 win/s, ETA 38s)
+[eval] 500/1009 (16.46 win/s, ETA 31s)
+[eval] 600/1009 (16.66 win/s, ETA 25s)
+[eval] 700/1009 (16.87 win/s, ETA 18s)
+[eval] 800/1009 (17.04 win/s, ETA 12s)
+[eval] 900/1009 (17.17 win/s, ETA 6s)
+[eval] 1000/1009 (17.30 win/s, ETA 1s)
+[eval] 1009/1009 (17.30 win/s, ETA 0s)
+[dump] saved preds/bolt-lora__ali.npz  preds(1009, 144)  trues(1009, 144)
+[done] bolt-lora__ali: h=1=0.8573  h=6=1.4676  h=36=2.7322  h=144=3.8295  runtime=58.4s
+=== bolt-base mit ===
+[model] loading amazon/chronos-bolt-base on cuda
+[data] data/mit_1s_test_v1.npy: shape=(4234,), mean=30.60, std=9.38
+[eval] 1297 windows, lookback=288, horizons=[1, 6, 36, 144]
+[eval] 100/1297 (8.90 win/s, ETA 135s)
+[eval] 200/1297 (11.95 win/s, ETA 92s)
+[eval] 300/1297 (13.52 win/s, ETA 74s)
+[eval] 400/1297 (14.44 win/s, ETA 62s)
+[eval] 500/1297 (15.05 win/s, ETA 53s)
+[eval] 600/1297 (15.47 win/s, ETA 45s)
+[eval] 700/1297 (15.77 win/s, ETA 38s)
+[eval] 800/1297 (16.01 win/s, ETA 31s)
+[eval] 900/1297 (16.18 win/s, ETA 25s)
+[eval] 1000/1297 (16.34 win/s, ETA 18s)
+[eval] 1100/1297 (16.45 win/s, ETA 12s)
+[eval] 1200/1297 (16.56 win/s, ETA 6s)
+[eval] 1297/1297 (16.64 win/s, ETA 0s)
+[dump] saved preds/bolt-base__mit.npz  preds(1297, 144)  trues(1297, 144)
+[done] bolt-base__mit: h=1=1.1015  h=6=1.3593  h=36=1.6835  h=144=2.5361  runtime=78.1s
+=== bolt-lora mit ===
+[model] loading amazon/chronos-bolt-base on cuda
+[lora] attaching adapter checkpoints/bolt_lora_mit/adapter
+[lora] merged.
+[data] data/mit_1s_test_v1.npy: shape=(4234,), mean=30.60, std=9.38
+[eval] 1297 windows, lookback=288, horizons=[1, 6, 36, 144]
+[eval] 100/1297 (11.70 win/s, ETA 102s)
+[eval] 200/1297 (14.36 win/s, ETA 76s)
+[eval] 300/1297 (15.56 win/s, ETA 64s)
+[eval] 400/1297 (16.27 win/s, ETA 55s)
+[eval] 500/1297 (16.60 win/s, ETA 48s)
+[eval] 600/1297 (16.85 win/s, ETA 41s)
+[eval] 700/1297 (17.00 win/s, ETA 35s)
+[eval] 800/1297 (17.13 win/s, ETA 29s)
+[eval] 900/1297 (17.22 win/s, ETA 23s)
+[eval] 1000/1297 (17.29 win/s, ETA 17s)
+[eval] 1100/1297 (17.37 win/s, ETA 11s)
+[eval] 1200/1297 (17.40 win/s, ETA 6s)
+[eval] 1297/1297 (17.44 win/s, ETA 0s)
+[dump] saved preds/bolt-lora__mit.npz  preds(1297, 144)  trues(1297, 144)
+[done] bolt-lora__mit: h=1=1.0747  h=6=1.3095  h=36=1.6031  h=144=2.4342  runtime=74.5s
+ALL_DONE
